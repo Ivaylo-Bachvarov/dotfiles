@@ -1,0 +1,13 @@
+{
+	"color_scheme": "Packages/Colorcoder/Monokai (Colorcoded).tmTheme",
+	"font_size": 11,
+	"ignored_packages":
+	[
+		"SideBarEnhancements",
+		"Vintage"
+	],
+	"original_color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"tab_size": 4,
+	"theme": "Soda Dark 3.sublime-theme",
+	"translate_tabs_to_spaces": true
+}
