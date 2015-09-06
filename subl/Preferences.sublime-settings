@@ -3,8 +3,8 @@
 	"font_size": 11,
 	"ignored_packages":
 	[
-		"SideBarEnhancements",
-		"Vintage"
+		"Vintage",
+		"Sass"
 	],
 	"original_color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"tab_size": 4,
