@@ -3,6 +3,6 @@ alias pmr="python manage.py runserver"
 alias pmt="python manage.py test"
 # Le me use capistrano
 alias cpd="cap production deploy"
-alias cst="cap staging deploy"
+alias csd="cap staging deploy"
 # Le me write functions
 alias scm="plt-r5rs"
