@@ -1,10 +1,10 @@
 {
-	"color_scheme": "Packages/Colorcoder/Monokai (Colorcoded).tmTheme",
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"font_size": 11,
 	"ignored_packages":
 	[
-		"Vintage",
-		"Sass"
+		"Sass",
+		"Vintage"
 	],
 	"original_color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"tab_size": 4,

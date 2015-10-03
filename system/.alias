@@ -6,3 +6,7 @@ alias cpd="cap production deploy"
 alias csd="cap staging deploy"
 # Le me write functions
 alias scm="plt-r5rs"
+
+#Work like grunt!
+alias work_on="sudo bash ~/.dotfiles/scripts/work_on"
+alias work_off="sudo bash ~/.dotfiles/scripts/work_off"

@@ -1,0 +1,9 @@
+if grep 'facebook.com' /etc/hosts
+then
+    # Delete the last 3 lines of the file
+    sed -i '$ d' /etc/hosts
+    sed -i '$ d' /etc/hosts
+    sed -i '$ d' /etc/hosts
+else
+    echo "It is off!"
+fi
