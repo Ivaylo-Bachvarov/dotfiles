@@ -3,3 +3,5 @@
         name = Ivaylo Bachvarof
 [core]
         editor = vim
+[push]
+	default = simple

@@ -1,12 +1,12 @@
 # Le me a django developer
 alias pmr="python manage.py runserver"
 alias pmt="python manage.py test"
+alias pmmm="python manage.py makemigrations"
+alias pmm="python manage.py migrate"
 # Le me use capistrano
 alias cpd="cap production deploy"
 alias csd="cap staging deploy"
 # Le me write functions
 alias scm="plt-r5rs"
-
-#Work like grunt!
-alias work_on="sudo bash ~/.dotfiles/scripts/work_on"
-alias work_off="sudo bash ~/.dotfiles/scripts/work_off"
+# A git master, soon
+alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"

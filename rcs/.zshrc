@@ -24,3 +24,7 @@ DOTFILES_DIR="$HOME/.dotfiles"
 for DOTFILE in "$DOTFILES_DIR"/system/.{function,env,alias}; do
     [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
+
+eval "$(jump shell zsh)"
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
