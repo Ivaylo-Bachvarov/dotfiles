@@ -1,5 +1,5 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker-OceanicNext.tmTheme",
 	"folder_exclude_patterns":
 	[
 		".svn",
@@ -8,14 +8,13 @@
 		"node_modules",
 		"bower_componenets"
 	],
-	"font_size": 12,
+	"font_size": 8,
 	"ignored_packages":
 	[
 		"Sass",
 		"Vintage"
 	],
-	"original_color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"tab_size": 4,
-	"theme": "Soda Dark 3.sublime-theme",
+	"theme": "Material-Theme-Darker.sublime-theme",
 	"translate_tabs_to_spaces": true
 }

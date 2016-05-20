@@ -10,7 +10,7 @@ ZSH_THEME="bira"
 # Uncomment the following line to enable command auto-correction.
 ENABLE_CORRECTION="true"
 
-plugins=(git)
+plugins=(git sublime extract sudo emoji)
 
 # User configuration
 
@@ -20,7 +20,6 @@ export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/g
 source $ZSH/oh-my-zsh.sh
 
 DOTFILES_DIR="$HOME/.dotfiles"
-
 for DOTFILE in "$DOTFILES_DIR"/system/.{function,env,alias}; do
     [ -f "$DOTFILE" ] && . "$DOTFILE"
 done
