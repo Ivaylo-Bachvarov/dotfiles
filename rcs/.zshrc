@@ -26,4 +26,7 @@ done
 
 eval "$(jump shell zsh)"
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+eval "$(tmux)"
+
+export NVM_DIR="/home/ivaylo/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
