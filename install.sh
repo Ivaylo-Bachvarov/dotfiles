@@ -9,6 +9,7 @@ EXTRA_DIR="$HOME/.extra"
 # Bunch of symlinks
 
 ln -sfv "$DOTFILES_DIR/rcs/.zshrc" ~
+ln -sfv "$DOTFILES_DIR/rcs/.tmux.conf" ~
 ln -sfv "$DOTFILES_DIR/git/.gitconfig" ~
 ln -sfTv "$DOTFILES_DIR" ~/.dotfiles
 ln -sfv "$DOTFILES_DIR/subl/Preferences.sublime-settings" ~/.config/sublime-text-3/Packages/User/
