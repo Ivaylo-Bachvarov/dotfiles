@@ -42,3 +42,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Ignore files and dirs in nerdtree
 let NERDTreeIgnore = ['\.pyc$', '__pycache__', 'node_modules', 'bower_components']
 " ******** NERDTree settings ends *********
+
+" Set the correct tabs and spaces for the right file types
+autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype css setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype scss setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype vimrc setlocal ts=2 sts=2 sw=2 expandtab
