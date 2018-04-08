@@ -13,6 +13,7 @@ call vundle#begin()
   Plugin 'davidhalter/jedi-vim'
   Plugin 'janko-m/vim-test'
   Plugin 'benmills/vimux'
+  Plugin 'terryma/vim-multiple-cursors'
 call vundle#end()
 filetype plugin indent on
 " Some magic required by vudnel ends
