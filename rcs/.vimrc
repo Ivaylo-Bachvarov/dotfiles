@@ -11,6 +11,8 @@ call vundle#begin()
   Plugin 'ctrlpvim/ctrlp.vim'
   Plugin 'scrooloose/syntastic'
   Plugin 'davidhalter/jedi-vim'
+  Plugin 'janko-m/vim-test'
+  Plugin 'benmills/vimux'
 call vundle#end()
 filetype plugin indent on
 " Some magic required by vudnel ends
@@ -74,3 +76,9 @@ let g:ctrlp_custom_ignore = {
 " ******** abbreviations start *********
 ab ipdb import ipdb; ipdb.set_trace()
 " ******** abbreviations end *********
+
+" ********  vimtest settings start ********
+" Run python tests in tmux using py.test
+let g:test#strategy = 'vimux'
+let test#python#runner = 'pytest'
+" ********  vimtest settings  ends ********
