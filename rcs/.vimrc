@@ -1,3 +1,15 @@
+" Some magic required by vundle start
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+  " let Vundle manage Vundle, required
+  Plugin 'VundleVim/Vundle.vim'
+call vundle#end()
+filetype plugin indent on
+" Some magic required by vudnel ends
+"
 " Add a little colors
 syntax enable
 colorscheme monokai
