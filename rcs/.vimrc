@@ -9,7 +9,7 @@ call vundle#begin()
 call vundle#end()
 filetype plugin indent on
 " Some magic required by vudnel ends
-"
+
 " Add a little colors
 syntax enable
 colorscheme monokai
@@ -29,3 +29,6 @@ augroup numbertoggle
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
+
+" Make the copy/paste works great
+set clipboard=unnamedplus
