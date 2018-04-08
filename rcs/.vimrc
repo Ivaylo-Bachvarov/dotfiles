@@ -69,3 +69,7 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(celerybeat-schedule|jpeg|png)$'
 \ }
 " ********  ctrlp settings ends ********
+
+" ******** abbreviations start *********
+ab ipdb import ipdb; ipdb.set_trace()
+" ******** abbreviations end *********
