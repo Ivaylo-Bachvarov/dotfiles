@@ -10,6 +10,7 @@ call vundle#begin()
   Plugin 'prettier/vim-prettier'
   Plugin 'ctrlpvim/ctrlp.vim'
   Plugin 'scrooloose/syntastic'
+  Plugin 'davidhalter/jedi-vim'
 call vundle#end()
 filetype plugin indent on
 " Some magic required by vudnel ends
