@@ -6,6 +6,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
   " let Vundle manage Vundle, required
   Plugin 'VundleVim/Vundle.vim'
+  Plugin 'scrooloose/nerdtree'
 call vundle#end()
 filetype plugin indent on
 " Some magic required by vudnel ends
@@ -32,3 +33,12 @@ augroup END
 
 " Make the copy/paste works great
 set clipboard=unnamedplus
+
+" ******** NERDTree settings start *********
+" Start NERDTree only if direcotry is opened
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" Ignore files and dirs in nerdtree
+let NERDTreeIgnore = ['\.pyc$', '__pycache__', 'node_modules', 'bower_components']
+" ******** NERDTree settings ends *********
