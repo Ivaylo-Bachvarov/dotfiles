@@ -9,6 +9,7 @@ call vundle#begin()
   Plugin 'scrooloose/nerdtree'
   Plugin 'prettier/vim-prettier'
   Plugin 'ctrlpvim/ctrlp.vim'
+  Plugin 'scrooloose/syntastic'
 call vundle#end()
 filetype plugin indent on
 " Some magic required by vudnel ends
