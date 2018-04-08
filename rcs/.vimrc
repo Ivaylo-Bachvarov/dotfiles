@@ -8,6 +8,7 @@ call vundle#begin()
   Plugin 'VundleVim/Vundle.vim'
   Plugin 'scrooloose/nerdtree'
   Plugin 'prettier/vim-prettier'
+  Plugin 'ctrlpvim/ctrlp.vim'
 call vundle#end()
 filetype plugin indent on
 " Some magic required by vudnel ends
@@ -57,3 +58,13 @@ let g:prettier#autoformat = 0
 " Run prettier on all of this file formats
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql Prettier
 " ******** prettier settings ends ********
+
+" ********  ctrlp settings start ********
+let g:ctrlp_working_path_mode = 'ra'
+" Search in Files, Buffers and MRU files at the same time.
+" Cusotm ctrlp ignore.
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.git|node_modules|bower_components|__pycache__)$',
+  \ 'file': '\v\.(celerybeat-schedule|jpeg|png)$'
+\ }
+" ********  ctrlp settings ends ********
