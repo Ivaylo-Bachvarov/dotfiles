@@ -7,6 +7,7 @@ call vundle#begin()
   " let Vundle manage Vundle, required
   Plugin 'VundleVim/Vundle.vim'
   Plugin 'scrooloose/nerdtree'
+  Plugin 'prettier/vim-prettier'
 call vundle#end()
 filetype plugin indent on
 " Some magic required by vudnel ends
@@ -48,3 +49,11 @@ autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype css setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype scss setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype vimrc setlocal ts=2 sts=2 sw=2 expandtab
+
+" ******** prettier settings start ********
+" Run prettier on file save
+let g:prettier#exec_cmd_async = 1
+let g:prettier#autoformat = 0
+" Run prettier on all of this file formats
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql Prettier
+" ******** prettier settings ends ********
