@@ -1,8 +1,0 @@
-if ! grep 'facebook.com' /etc/hosts
-then
-    echo "127.0.0.1       facebook.com    www.facebook.com" >> /etc/hosts
-    echo "127.0.0.1       vbox7.com       www.vbox7.com" >> /etc/hosts
-    echo "127.0.0.1       youtube.com     www.youtube.com" >> /etc/hosts
-else
-    echo "It is on!"
-fi
