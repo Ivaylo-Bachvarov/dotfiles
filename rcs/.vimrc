@@ -28,7 +28,8 @@ set guioptions -=T
 set guioptions -=r
 
 " Show “invisible” characters
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set listchars=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set list
 
 " Show relative line number only on focused  buffer
 set number relativenumber
@@ -53,6 +54,7 @@ let NERDTreeIgnore = ['\.pyc$', '__pycache__', 'node_modules', 'bower_components
 " Set the correct tabs and spaces for the right file types
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype css setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype html setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype scss setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype vimrc setlocal ts=2 sts=2 sw=2 expandtab
 
@@ -83,3 +85,9 @@ ab ipdb import ipdb; ipdb.set_trace()
 let g:test#strategy = 'vimux'
 let test#python#runner = 'pytest'
 " ********  vimtest settings  ends ********
+
+""Better window navigation
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
