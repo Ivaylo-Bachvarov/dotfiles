@@ -15,6 +15,7 @@ call vundle#begin()
   Plugin 'benmills/vimux'
   Plugin 'scrooloose/nerdcommenter'
   Plugin 'terryma/vim-multiple-cursors'
+  Plugin 'jgdavey/tslime.vim'
 call vundle#end()
 filetype plugin indent on
 " Some magic required by vudnel ends
@@ -83,7 +84,7 @@ ab ipdb import ipdb; ipdb.set_trace()
 
 " ********  vimtest settings start ********
 " Run python tests in tmux using py.test
-let g:test#strategy = 'vimux'
+let g:test#strategy = 'tslime'
 let test#python#runner = 'pytest'
 " ********  vimtest settings  ends ********
 
@@ -92,3 +93,10 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+
+" Map <C-a> to select the entire content of the file
+nnoremap <C-a> ggVG
+
+" Make you keyboard actually do something while you are switched to Cyrillic
+" layout. Ripped off @StanAngeloff.
+set langmap+=чявертъуиопшщасдфгхйклзьцжбнмЧЯВЕРТЪУИОПШЩАСДФГХЙКЛЗѝЦЖБНМ;`qwertyuiop[]asdfghjklzxcvbnm~QWERTYUIOP{}ASDFGHJKLZXCVBNM,ю\\,Ю\|,

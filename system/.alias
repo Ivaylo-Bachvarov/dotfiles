@@ -3,6 +3,7 @@ alias pmr="python manage.py runserver"
 alias pmt="python manage.py test"
 alias pmmm="python manage.py makemigrations"
 alias pmm="python manage.py migrate"
+alias what="py.test --lf --capture=no --reuse-db"
 # Le me use capistrano
 alias cpd="cap production deploy"
 alias csd="cap staging deploy"
@@ -10,3 +11,4 @@ alias csd="cap staging deploy"
 alias scm="plt-r5rs"
 # A git master, soon
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias omg="sudo systemctl restart network-manager.service"

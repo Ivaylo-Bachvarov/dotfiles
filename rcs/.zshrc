@@ -26,7 +26,8 @@ done
 
 eval "$(jump shell zsh)"
 export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(tmux)"
 
 export NVM_DIR="/home/ivaylo/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+eval "$(pyenv virtualenv-init -)"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

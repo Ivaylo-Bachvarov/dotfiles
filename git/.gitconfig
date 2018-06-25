@@ -3,5 +3,6 @@
         name = Ivaylo Bachvarof
 [core]
         editor = vim
+	excludesfile = ~/.gitignore
 [push]
 	default = simple
